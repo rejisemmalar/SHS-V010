@@ -47,7 +47,7 @@
       "MetaDataIDKey": "",
       "Name": "Add doc_Button_20",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -278,7 +278,7 @@
       "MetaDataIDKey": "",
       "Name": "Arrow1_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -373,7 +373,14 @@
     "Button21": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "OnSelect",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Select(Parent)",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -996,7 +1003,7 @@
       "MetaDataIDKey": "",
       "Name": "Button4_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1956,7 +1963,7 @@
       "MetaDataIDKey": "",
       "Name": "Component1_9",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2087,7 +2094,7 @@
       "MetaDataIDKey": "",
       "Name": "Container7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2268,7 +2275,7 @@
       "MetaDataIDKey": "",
       "Name": "Container8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11645,7 +11652,7 @@
       "MetaDataIDKey": "",
       "Name": "Gallery6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11864,7 +11871,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon15_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12052,7 +12059,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon15_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12308,7 +12315,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon5_27",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12589,7 +12596,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon5_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12811,7 +12818,7 @@
       "MetaDataIDKey": "",
       "Name": "Label12",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13372,7 +13379,7 @@
       "MetaDataIDKey": "",
       "Name": "Label39",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13656,7 +13663,7 @@
       "MetaDataIDKey": "",
       "Name": "Label39_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13940,7 +13947,7 @@
       "MetaDataIDKey": "",
       "Name": "Label39_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14861,7 +14868,7 @@
       "MetaDataIDKey": "",
       "Name": "Search_20",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

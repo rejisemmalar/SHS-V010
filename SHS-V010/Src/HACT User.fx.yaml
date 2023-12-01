@@ -1343,6 +1343,8 @@
                     ZIndex: =4
 
         Button10 As button:
+            OnSelect: |-
+                =SubmitForm(Form4);UpdateContext({showeditshsuser:false})
             Text: ="Save"
             X: =49
             Y: =420

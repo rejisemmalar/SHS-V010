@@ -334,6 +334,7 @@
     "Division Name_DataCard2": 780,
     "Division_Column1": 388,
     "Division_DataCard1": 366,
+    "Editdivpopup": 837,
     "Email Id_DataCard1": 466,
     "Email_DataCard1": 346,
     "ErrorMessage1": 183,
@@ -845,7 +846,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/01/2023 07:51:14",
+  "HeaderLastSavedDateTimeUTC": "12/01/2023 07:51:48",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "d5d288d0-8556-4a38-a03d-f5517ce3059c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/6b09e5d9e40c401a9964269a06a6ff10\""
@@ -938,7 +939,12 @@
     "SHS-Users_1": 17,
     "Subfactors_1": 18
   },
-  "OrderGroupControls": {},
+  "OrderGroupControls": {
+    "Editdivpopup": {
+      "Container23": 1,
+      "Container24": 0
+    }
+  },
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
@@ -1271,6 +1277,7 @@
     "Division Name_DataCard2": {},
     "Division_Column1": {},
     "Division_DataCard1": {},
+    "Editdivpopup": {},
     "Email Id_DataCard1": {},
     "Email_DataCard1": {},
     "ErrorMessage1": {},
@@ -2096,6 +2103,7 @@
     "Division Name_DataCard2": 110,
     "Division_Column1": 427,
     "Division_DataCard1": 405,
+    "Editdivpopup": 0,
     "Email Id_DataCard1": 486,
     "Email_DataCard1": 385,
     "ErrorMessage1": 63,

@@ -879,7 +879,7 @@ Division As screen:
         ZIndex: =18
 
         Label42 As label:
-            Text: ="Text"
+            Text: ="Edit Division"
             X: =15
             Y: =21
             ZIndex: =1

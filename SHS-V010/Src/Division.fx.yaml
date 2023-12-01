@@ -899,7 +899,10 @@ Division As screen:
             ZIndex: =2
 
         Label46 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
             Height: =62
+            Size: =20
             Text: ="Are you syre you want to delete?"
             Width: =610
             X: =114

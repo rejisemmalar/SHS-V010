@@ -771,3 +771,9 @@
                     Y: =DataCardKey34.Y
                     ZIndex: =4
 
+    Container11 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(204, 208, 225, 0.38)
+        Height: =768
+        Width: =1366
+        ZIndex: =18
+

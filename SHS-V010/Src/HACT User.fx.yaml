@@ -54,7 +54,7 @@
 
         Button9_1 As button:
             OnSelect: =Select(Parent)
-            Text: ="Edit"
+            Text: ="Delete"
             Width: =101
             X: =888
             Y: =15
@@ -190,13 +190,13 @@
             Y: =450
             ZIndex: =4
 
-    Label39 As label:
+    "'Display Name' As label":
         Text: ="Display Name"
         X: =332
         Y: =343
         ZIndex: =13
 
-    Label39_1 As label:
+    Designation As label:
         Text: ="Designation"
         X: =525
         Y: =343

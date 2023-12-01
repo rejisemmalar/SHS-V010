@@ -890,6 +890,13 @@ Division As screen:
             Y: =27
             ZIndex: =1
 
+        Icon17 As icon.HorizontalLine:
+            Height: =0
+            Icon: =Icon.HorizontalLine
+            Width: =802
+            Y: =91
+            ZIndex: =2
+
     showeditpopupdiv As group:
         Height: =5
         Width: =5

@@ -231,8 +231,14 @@
         ZIndex: =14
 
     Label39_2 As label:
-        Text: =""
+        Text: ="Stakeholder"
         X: =688
         Y: =343
         ZIndex: =15
+
+    Label39_3 As label:
+        Text: ="User "
+        X: =838
+        Y: =343
+        ZIndex: =16
 

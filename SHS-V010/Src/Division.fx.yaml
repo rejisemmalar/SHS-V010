@@ -848,7 +848,8 @@ Division As screen:
             ZIndex: =2
 
         Button24 As button:
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =UpdateContext({showeditpopup:true})
             Text: ="Edit"
             Width: =96
             X: =662

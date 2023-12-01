@@ -109,7 +109,11 @@
         ZIndex: =11
 
         Label47 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Size: =20
             Text: ="Add SHS User"
+            Width: =234
             X: =15
             Y: =27
             ZIndex: =1

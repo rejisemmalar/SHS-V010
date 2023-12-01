@@ -890,9 +890,10 @@ Division As screen:
 
         Form11 As form:
             DataSource: =Division_1
-            Height: =273
+            Height: =289
+            Item: =Gallery6.Selected
             Width: =1012
-            Y: =105
+            Y: =90
             ZIndex: =2
 
             "'Division Name_DataCard3' As typedDataCard.textualEditCard":

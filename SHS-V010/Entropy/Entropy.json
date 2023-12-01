@@ -769,6 +769,7 @@
     "Settings": 687,
     "Settings(com)": 127,
     "Settings(com)_1": 689,
+    "showeditpopupdiv": 968,
     "Stakeholder_Column1": 387,
     "Stakeholder_DataCard1": 475,
     "Stakeholder_DataCard2": 361,
@@ -845,7 +846,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/01/2023 08:10:19",
+  "HeaderLastSavedDateTimeUTC": "12/01/2023 08:10:41",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "d5d288d0-8556-4a38-a03d-f5517ce3059c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/6b09e5d9e40c401a9964269a06a6ff10\""
@@ -938,7 +939,12 @@
     "SHS-Users_1": 17,
     "Subfactors_1": 18
   },
-  "OrderGroupControls": {},
+  "OrderGroupControls": {
+    "showeditpopupdiv": {
+      "Container27": 1,
+      "Container28": 0
+    }
+  },
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
@@ -1706,6 +1712,7 @@
     "Settings": {},
     "Settings(com)": {},
     "Settings(com)_1": {},
+    "showeditpopupdiv": {},
     "Stakeholder_Column1": {},
     "Stakeholder_DataCard1": {},
     "Stakeholder_DataCard2": {},
@@ -2531,6 +2538,7 @@
     "Settings": 719,
     "Settings(com)": 135,
     "Settings(com)_1": 369,
+    "showeditpopupdiv": 0,
     "Stakeholder_Column1": 426,
     "Stakeholder_DataCard1": 495,
     "Stakeholder_DataCard2": 400,

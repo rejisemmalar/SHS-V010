@@ -1496,6 +1496,8 @@ Division As screen:
             ZIndex: =3
 
         Button22_1 As button:
+            OnSelect: |-
+                =UpdateContext({showeditdivpopup:false})
             Text: ="Cancel"
             X: =496
             Y: =458

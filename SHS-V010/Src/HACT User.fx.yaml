@@ -225,8 +225,14 @@
         ZIndex: =13
 
     Label39_1 As label:
-        Text: ="Display Name"
+        Text: ="Designation"
         X: =525
         Y: =343
         ZIndex: =14
+
+    Label39_2 As label:
+        Text: =""
+        X: =688
+        Y: =343
+        ZIndex: =15
 

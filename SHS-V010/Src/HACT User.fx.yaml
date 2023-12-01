@@ -226,7 +226,6 @@
 
         Form4 As form:
             DataSource: ='SHS-Users_1'
-            DefaultMode: =FormMode.New
             Height: =299
             Item: =Gallery6.Selected
             Width: =971

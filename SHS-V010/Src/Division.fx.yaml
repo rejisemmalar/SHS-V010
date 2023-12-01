@@ -1519,12 +1519,14 @@ Division As screen:
         Container29 As groupContainer.manualLayoutContainer:
             Fill: =RGBA(128, 128, 128, 0.34)
             Height: =768
+            Visible: =varshowdeletepopup
             Width: =1366
             ZIndex: =19
 
         Container30 As groupContainer.manualLayoutContainer:
             Fill: =RGBA(238, 204, 204, 1)
             Height: =376
+            Visible: =varshowdeletepopup
             Width: =813
             X: =392
             Y: =235

@@ -1,0 +1,9 @@
+Test As screen:
+
+    Header_Comp_1 As Header_Comp:
+
+    LeftNavigation_Comp_1 As LeftNavigation_Comp:
+        Width: =LeftNavigation_Comp_1.MenuWidth
+        Y: =125
+        ZIndex: =2
+

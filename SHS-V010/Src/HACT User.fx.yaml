@@ -1,8 +1,66 @@
 "'HACT User' As screen":
 
+    Gallery6 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =360
+        Items: ='SHS-Users_1'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =126
+        Width: =1072
+        X: =294
+        Y: =408
+        ZIndex: =1
+
+        Label40 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Display Name'
+            X: =27
+            Y: =15
+            ZIndex: =1
+
+        Label40_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'PR Number'
+            X: =223
+            Y: =15
+            ZIndex: =2
+
+        Label40_2 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Email
+            X: =411
+            Y: =15
+            ZIndex: =3
+
+        Label40_3 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Designation
+            X: =591
+            Y: =15
+            ZIndex: =4
+
+        Button9 As button:
+            OnSelect: |-
+                =UpdateContext({showeditshsuser:true})
+            Text: ="Edit"
+            Width: =101
+            X: =756
+            Y: =15
+            ZIndex: =5
+
+        Button9_1 As button:
+            OnSelect: =Select(Parent)
+            Text: ="Delete"
+            Width: =101
+            X: =888
+            Y: =15
+            ZIndex: =6
+
     Component1_16 As Component1:
         CurrentScreen: ="Settings"
         Height: =768
+        ZIndex: =2
 
     Arrow1_11 As arrow.backArrow:
         Fill: =RGBA(0, 18, 107, 1)
@@ -11,7 +69,7 @@
         Width: =26
         X: =306
         Y: =135
-        ZIndex: =2
+        ZIndex: =3
 
     Label12_7 As label:
         FontWeight: =FontWeight.Bold
@@ -19,7 +77,7 @@
         Text: ="HACT User"
         X: =306
         Y: =180
-        ZIndex: =3
+        ZIndex: =4
 
     Icon5_11 As icon.HorizontalLine:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -36,7 +94,7 @@
         Width: =1050
         X: =306
         Y: =273
-        ZIndex: =4
+        ZIndex: =5
 
     Icon5_29 As icon.HorizontalLine:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -53,21 +111,21 @@
         Width: =1050
         X: =306
         Y: =317
-        ZIndex: =5
+        ZIndex: =6
 
     Search_21 As Search:
         Height: =47
         Width: =198
         X: =869
         Y: =195
-        ZIndex: =6
+        ZIndex: =7
 
     "'Add doc_Button_21' As 'Add doc_Button'":
         Height: =47
         Width: =161
         X: =1044
         Y: =195
-        ZIndex: =7
+        ZIndex: =8
 
     Button4_2 As button:
         Color: =Color.White
@@ -83,7 +141,7 @@
         Width: =85
         X: =1205
         Y: =200
-        ZIndex: =8
+        ZIndex: =9
 
     Icon15_3 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
@@ -92,148 +150,138 @@
         Width: =35
         X: =1205
         Y: =206
-        ZIndex: =9
-
-    Container11 As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(169, 169, 169, .75)
-        Height: =767
-        Visible: =ShowPopup
-        Width: =1366
         ZIndex: =10
 
-    DataTable3 As dataTable.datatable:
-        BorderStyle: =BorderStyle.Solid
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =431
-        Items: ='SHS-Users_1'
-        Width: =1083
-        X: =283
-        Y: =337
+    Container32 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(204, 208, 225, 0.37)
+        Height: =768
+        Visible: =ShowPopup
+        Width: =1366
         ZIndex: =11
 
-        "'Display Name_Column1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Display Name"
-            FieldName: ="Title"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.'Display Name'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =6
-
-        Stakeholder_Column1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Stakeholder"
-            FieldName: ="Stakeholder"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =6
-            Text: =ThisItem.Stakeholder
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =11
-
-        Division_Column1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Division"
-            FieldName: ="Division"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =7
-            Text: =ThisItem.Division.Value
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =12
-
-        "'User Role_Column1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="User Role"
-            FieldName: ="User_x0020_Role"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =8
-            Text: =ThisItem.'User Role'.Value
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =13
-
-        Action_Column4 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action"
-            FieldName: ="Action"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =9
-            Text: =ThisItem.Action
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =14
-
-    Container12 As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(167, 182, 203, 1)
-        Height: =525
-        Visible: =ShowPopup
-        Width: =1044
-        X: =213
-        Y: =161
+    "'Display Name' As label":
+        Text: ="Display Name"
+        X: =332
+        Y: =343
         ZIndex: =12
 
-        Button10 As button:
+    Designation As label:
+        Text: ="Designation"
+        X: =525
+        Y: =343
+        ZIndex: =13
+
+    Stakeholder As label:
+        Text: ="Stakeholder"
+        X: =688
+        Y: =343
+        ZIndex: =14
+
+    "'User Role' As label":
+        Text: ="User Role"
+        X: =838
+        Y: =343
+        ZIndex: =15
+
+    "'Action(SHS_user)' As label":
+        Text: ="Action"
+        X: =1067
+        Y: =343
+        ZIndex: =16
+
+    Container33 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(238, 204, 204, 1)
+        Height: =530
+        Visible: =ShowPopup
+        Width: =1003
+        X: =306
+        Y: =195
+        ZIndex: =17
+
+        Label47 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Size: =20
+            Text: ="Add SHS User"
+            Width: =234
+            X: =15
+            Y: =27
+            ZIndex: =1
+
+        Button27 As button:
+            OnSelect: |-
+                =SubmitForm(Form4);NewForm(Form4);UpdateContext({ShowPopup:true})
+            Text: ="Save"
+            X: =52
+            Y: =450
+            ZIndex: =3
+
+        Button27_1 As button:
             OnSelect: |-
                 =UpdateContext({ShowPopup:false})
             Text: ="Cancel"
-            X: =541
-            Y: =426
-            ZIndex: =2
-
-        Button9 As button:
-            OnSelect: |-
-                =SubmitForm(Form4);NewForm(Form4);UpdateContext({ShowPopup: false});
-            Text: ="Save"
-            X: =54
-            Y: =426
-            ZIndex: =3
-
-        Form4 As form:
-            DataSource: ='SHS-Users'
-            DefaultMode: =FormMode.New
-            Height: =338
-            NumberOfColumns: =2
-            Width: =937
-            X: =40
-            Y: =25
+            X: =388
+            Y: =450
             ZIndex: =4
 
-            "'Display Name_DataCard1' As typedDataCard.textualEditCard":
+        Form4 As form:
+            DataSource: ='SHS-Users_1'
+            Height: =299
+            Item: =Gallery6.Selected
+            Width: =971
+            X: =30
+            Y: =102
+            ZIndex: =5
+
+    Container11 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(204, 208, 225, 0.38)
+        Height: =768
+        Width: =1366
+        ZIndex: =18
+
+    Container12 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(253, 222, 207, 1)
+        Height: =505
+        Width: =986
+        X: =338
+        Y: =220
+        ZIndex: =19
+
+        Label41 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =43
+            Size: =20
+            Text: ="Edit SHS User"
+            Width: =198
+            X: =30
+            Y: =21
+            ZIndex: =1
+
+        Form10 As form:
+            DataSource: ='SHS-Users_1'
+            Height: =310
+            Width: =985
+            Y: =80
+            ZIndex: =2
+
+            "'Display Name_DataCard2' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Title"
                 Default: =ThisItem.'Display Name'
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"Title")
+                DisplayName: =DataSourceInfo([@'SHS-Users_1'],DataSourceInfo.DisplayName,"Title")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
-                MaxLength: =DataSourceInfo([@'SHS-Users'], DataSourceInfo.MaxLength, "Title")
+                MaxLength: =DataSourceInfo([@'SHS-Users_1'], DataSourceInfo.MaxLength, "Title")
                 Required: =true
-                Update: =DataCardValue27.Text
-                Width: =468
+                Update: =DataCardValue46.Text
+                Width: =328
                 X: =0
                 Y: =0
-                ZIndex: =5
+                ZIndex: =3
 
-                DataCardKey27 As label:
+                DataCardKey46 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -243,7 +291,7 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue27 As text:
+                DataCardValue46 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -257,10 +305,10 @@
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey27.Y + DataCardKey27.Height + 5
+                    Y: =DataCardKey46.Y + DataCardKey46.Height + 5
                     ZIndex: =2
 
-                ErrorMessage19 As label:
+                ErrorMessage38 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -272,35 +320,35 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue27.Y + DataCardValue27.Height
+                    Y: =DataCardValue46.Y + DataCardValue46.Height
                     ZIndex: =3
 
-                StarVisible19 As label:
+                StarVisible38 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey27.Height
+                    Height: =DataCardKey46.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey27.Y
+                    Y: =DataCardKey46.Y
                     ZIndex: =4
 
-            "'PR Number_DataCard2' As typedDataCard.numberEditCard":
+            "'PR Number_DataCard3' As typedDataCard.numberEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="PR_x0020_Number"
                 Default: =ThisItem.'PR Number'
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"PR_x0020_Number")
+                DisplayName: =DataSourceInfo([@'SHS-Users_1'],DataSourceInfo.DisplayName,"PR_x0020_Number")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =true
-                Update: =Value(DataCardValue28.Text)
-                Width: =468
+                Update: =Value(DataCardValue47.Text)
+                Width: =328
                 X: =1
                 Y: =0
-                ZIndex: =5
+                ZIndex: =3
 
-                DataCardKey28 As label:
+                DataCardKey47 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -310,7 +358,7 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue28 As text:
+                DataCardValue47 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -324,10 +372,10 @@
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey28.Y + DataCardKey28.Height + 5
+                    Y: =DataCardKey47.Y + DataCardKey47.Height + 5
                     ZIndex: =2
 
-                ErrorMessage20 As label:
+                ErrorMessage39 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -339,36 +387,36 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue28.Y + DataCardValue28.Height
+                    Y: =DataCardValue47.Y + DataCardValue47.Height
                     ZIndex: =3
 
-                StarVisible20 As label:
+                StarVisible39 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey28.Height
+                    Height: =DataCardKey47.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey28.Y
+                    Y: =DataCardKey47.Y
                     ZIndex: =4
 
-            Email_DataCard1 As typedDataCard.textualEditCard:
+            Email_DataCard2 As typedDataCard.textualEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Email"
                 Default: =ThisItem.Email
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"Email")
+                DisplayName: =DataSourceInfo([@'SHS-Users_1'],DataSourceInfo.DisplayName,"Email")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
-                MaxLength: =DataSourceInfo([@'SHS-Users'], DataSourceInfo.MaxLength, "Email")
+                MaxLength: =DataSourceInfo([@'SHS-Users_1'], DataSourceInfo.MaxLength, "Email")
                 Required: =true
-                Update: =DataCardValue29.Text
-                Width: =468
-                X: =0
-                Y: =1
-                ZIndex: =5
+                Update: =DataCardValue48.Text
+                Width: =328
+                X: =2
+                Y: =0
+                ZIndex: =3
 
-                DataCardKey29 As label:
+                DataCardKey48 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -378,7 +426,7 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue29 As text:
+                DataCardValue48 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -392,10 +440,10 @@
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey29.Y + DataCardKey29.Height + 5
+                    Y: =DataCardKey48.Y + DataCardKey48.Height + 5
                     ZIndex: =2
 
-                ErrorMessage21 As label:
+                ErrorMessage40 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -407,36 +455,36 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue29.Y + DataCardValue29.Height
+                    Y: =DataCardValue48.Y + DataCardValue48.Height
                     ZIndex: =3
 
-                StarVisible21 As label:
+                StarVisible40 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey29.Height
+                    Height: =DataCardKey48.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey29.Y
+                    Y: =DataCardKey48.Y
                     ZIndex: =4
 
-            Designation_DataCard2 As typedDataCard.textualEditCard:
+            Designation_DataCard3 As typedDataCard.textualEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Designation"
                 Default: =ThisItem.Designation
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"Designation")
+                DisplayName: =DataSourceInfo([@'SHS-Users_1'],DataSourceInfo.DisplayName,"Designation")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
-                MaxLength: =DataSourceInfo([@'SHS-Users'], DataSourceInfo.MaxLength, "Designation")
+                MaxLength: =DataSourceInfo([@'SHS-Users_1'], DataSourceInfo.MaxLength, "Designation")
                 Required: =true
-                Update: =DataCardValue30.Text
-                Width: =468
-                X: =1
+                Update: =DataCardValue49.Text
+                Width: =328
+                X: =0
                 Y: =1
-                ZIndex: =5
+                ZIndex: =3
 
-                DataCardKey30 As label:
+                DataCardKey49 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -446,7 +494,7 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue30 As text:
+                DataCardValue49 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -460,10 +508,10 @@
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey30.Y + DataCardKey30.Height + 5
+                    Y: =DataCardKey49.Y + DataCardKey49.Height + 5
                     ZIndex: =2
 
-                ErrorMessage22 As label:
+                ErrorMessage41 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -475,36 +523,36 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue30.Y + DataCardValue30.Height
+                    Y: =DataCardValue49.Y + DataCardValue49.Height
                     ZIndex: =3
 
-                StarVisible22 As label:
+                StarVisible41 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey30.Height
+                    Height: =DataCardKey49.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey30.Y
+                    Y: =DataCardKey49.Y
                     ZIndex: =4
 
-            "'NT Login_DataCard1' As typedDataCard.textualEditCard":
+            "'NT Login_DataCard2' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="NT_x0020_Login"
                 Default: =ThisItem.'NT Login'
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"NT_x0020_Login")
+                DisplayName: =DataSourceInfo([@'SHS-Users_1'],DataSourceInfo.DisplayName,"NT_x0020_Login")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
-                MaxLength: =DataSourceInfo([@'SHS-Users'], DataSourceInfo.MaxLength, "NT_x0020_Login")
+                MaxLength: =DataSourceInfo([@'SHS-Users_1'], DataSourceInfo.MaxLength, "NT_x0020_Login")
                 Required: =true
-                Update: =DataCardValue31.Text
-                Width: =468
-                X: =0
-                Y: =2
-                ZIndex: =5
+                Update: =DataCardValue50.Text
+                Width: =328
+                X: =1
+                Y: =1
+                ZIndex: =3
 
-                DataCardKey31 As label:
+                DataCardKey50 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -514,7 +562,7 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue31 As text:
+                DataCardValue50 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -528,10 +576,10 @@
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey31.Y + DataCardKey31.Height + 5
+                    Y: =DataCardKey50.Y + DataCardKey50.Height + 5
                     ZIndex: =2
 
-                ErrorMessage23 As label:
+                ErrorMessage42 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -543,36 +591,36 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue31.Y + DataCardValue31.Height
+                    Y: =DataCardValue50.Y + DataCardValue50.Height
                     ZIndex: =3
 
-                StarVisible23 As label:
+                StarVisible42 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey31.Height
+                    Height: =DataCardKey50.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey31.Y
+                    Y: =DataCardKey50.Y
                     ZIndex: =4
 
-            Stakeholder_DataCard2 As typedDataCard.textualEditCard:
+            Stakeholder_DataCard3 As typedDataCard.textualEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Stakeholder"
                 Default: =ThisItem.Stakeholder
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"Stakeholder")
+                DisplayName: =DataSourceInfo([@'SHS-Users_1'],DataSourceInfo.DisplayName,"Stakeholder")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
-                MaxLength: =DataSourceInfo([@'SHS-Users'], DataSourceInfo.MaxLength, "Stakeholder")
+                MaxLength: =DataSourceInfo([@'SHS-Users_1'], DataSourceInfo.MaxLength, "Stakeholder")
                 Required: =true
-                Update: =DataCardValue32.Text
-                Width: =468
-                X: =1
-                Y: =2
-                ZIndex: =5
+                Update: =DataCardValue51.Text
+                Width: =328
+                X: =2
+                Y: =1
+                ZIndex: =3
 
-                DataCardKey32 As label:
+                DataCardKey51 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -582,7 +630,7 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue32 As text:
+                DataCardValue51 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -596,10 +644,10 @@
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey32.Y + DataCardKey32.Height + 5
+                    Y: =DataCardKey51.Y + DataCardKey51.Height + 5
                     ZIndex: =2
 
-                ErrorMessage24 As label:
+                ErrorMessage43 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -611,35 +659,35 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue32.Y + DataCardValue32.Height
+                    Y: =DataCardValue51.Y + DataCardValue51.Height
                     ZIndex: =3
 
-                StarVisible24 As label:
+                StarVisible43 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey32.Height
+                    Height: =DataCardKey51.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey32.Y
+                    Y: =DataCardKey51.Y
                     ZIndex: =4
 
-            Division_DataCard1 As typedDataCard.comboBoxEditCard:
+            Division_DataCard2 As typedDataCard.comboBoxEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Division"
                 Default: =ThisItem.Division
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"Division")
+                DisplayName: =DataSourceInfo([@'SHS-Users_1'],DataSourceInfo.DisplayName,"Division")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =true
-                Update: =DataCardValue33.Selected
-                Width: =468
+                Update: =DataCardValue52.Selected
+                Width: =328
                 X: =0
-                Y: =3
-                ZIndex: =5
+                Y: =2
+                ZIndex: =3
 
-                DataCardKey33 As label:
+                DataCardKey52 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -649,24 +697,23 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue33 As combobox:
+                DataCardValue52 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
-                    IsSearchable: =false
                     Items: =Choices([@'SHS-Users_1'].Division)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
-                    SearchItems: =[]
+                    SearchItems: =Choices('SHS-Users_1'.Division,DataCardValue52.SearchText)
                     SelectMultiple: =false
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey33.Y + DataCardKey33.Height + 5
+                    Y: =DataCardKey52.Y + DataCardKey52.Height + 5
                     ZIndex: =2
 
-                ErrorMessage25 As label:
+                ErrorMessage44 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -678,35 +725,35 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue33.Y + DataCardValue33.Height
+                    Y: =DataCardValue52.Y + DataCardValue52.Height
                     ZIndex: =3
 
-                StarVisible25 As label:
+                StarVisible44 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey33.Height
+                    Height: =DataCardKey52.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey33.Y
+                    Y: =DataCardKey52.Y
                     ZIndex: =4
 
-            "'User Role_DataCard1' As typedDataCard.comboBoxEditCard":
+            "'User Role_DataCard2' As typedDataCard.comboBoxEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="User_x0020_Role"
                 Default: =ThisItem.'User Role'
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'SHS-Users'],DataSourceInfo.DisplayName,"User_x0020_Role")
+                DisplayName: =DataSourceInfo([@'SHS-Users_1'],DataSourceInfo.DisplayName,"User_x0020_Role")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =true
-                Update: =DataCardValue34.Selected
-                Width: =468
+                Update: =DataCardValue53.Selected
+                Width: =328
                 X: =1
-                Y: =3
-                ZIndex: =5
+                Y: =2
+                ZIndex: =3
 
-                DataCardKey34 As label:
+                DataCardKey53 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -716,24 +763,23 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue34 As combobox:
+                DataCardValue53 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
-                    IsSearchable: =false
                     Items: =Choices([@'SHS-Users_1'].User_x0020_Role)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
-                    SearchItems: =[]
+                    SearchItems: =Choices('SHS-Users_1'.User_x0020_Role,DataCardValue53.SearchText)
                     SelectMultiple: =false
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey34.Y + DataCardKey34.Height + 5
+                    Y: =DataCardKey53.Y + DataCardKey53.Height + 5
                     ZIndex: =2
 
-                ErrorMessage26 As label:
+                ErrorMessage45 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -745,16 +791,32 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue34.Y + DataCardValue34.Height
+                    Y: =DataCardValue53.Y + DataCardValue53.Height
                     ZIndex: =3
 
-                StarVisible26 As label:
+                StarVisible45 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey34.Height
+                    Height: =DataCardKey53.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey34.Y
+                    Y: =DataCardKey53.Y
                     ZIndex: =4
+
+        Button10 As button:
+            OnSelect: |-
+                =SubmitForm(Form4);UpdateContext({showeditshsuser:false});Notify("The SHS user has been updated successfully",NotificationType.Success)
+            Text: ="Save"
+            X: =49
+            Y: =420
+            ZIndex: =3
+
+        Button10_1 As button:
+            OnSelect: |-
+                =UpdateContext({showeditshsuser:false})
+            Text: ="Cancel"
+            X: =353
+            Y: =420
+            ZIndex: =4
 

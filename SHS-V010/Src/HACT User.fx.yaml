@@ -46,11 +46,19 @@
 
         Button9 As button:
             OnSelect: =Select(Parent)
-            Text: ="Button"
+            Text: ="Edit"
             Width: =101
             X: =756
             Y: =15
             ZIndex: =5
+
+        Button9_1 As button:
+            OnSelect: =Select(Parent)
+            Text: ="Edit"
+            Width: =101
+            X: =888
+            Y: =15
+            ZIndex: =6
 
     Arrow1_11 As arrow.backArrow:
         Fill: =RGBA(0, 18, 107, 1)

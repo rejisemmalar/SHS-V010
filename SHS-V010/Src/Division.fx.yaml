@@ -880,7 +880,12 @@ Division As screen:
         ZIndex: =20
 
         Label45 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =64
+            Size: =30
             Text: ="Confirmation"
+            Width: =362
             X: =156
             Y: =27
             ZIndex: =1

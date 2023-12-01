@@ -1,0 +1,58 @@
+Header_Comp As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =125
+    Width: =App.DesignWidth
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Header_Cont As groupContainer.manualLayoutContainer:
+        Height: =Header_Comp.Height
+        Width: =1366
+        ZIndex: =1
+
+        Logo As image:
+            Image: =logo
+            X: =72
+            Y: =9
+            ZIndex: =2
+
+        HeaderText As label:
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Size: =25
+            Text: ="Supplier Happiness Survey"
+            Width: =488
+            X: =264
+            Y: =39
+            ZIndex: =3
+
+        "'Notify Icon' As icon.Bell":
+            Height: =52
+            Icon: =Icon.Bell
+            Width: =38
+            X: =1134
+            Y: =39
+            ZIndex: =4
+
+        USerNAme As circle:
+            Fill: =RGBA(237, 5, 136, 1)
+            Height: =62
+            OnSelect: =Set(Showdropdown, !Showdropdown)
+            Width: =60
+            X: =1228
+            Y: =28
+            ZIndex: =5
+
+        "'user Text' As label":
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =52
+            OnSelect: =Set(Showdropdown, !Showdropdown)
+            Size: =25
+            Text: ="A"
+            Width: =34
+            X: =1241
+            Y: =33
+            ZIndex: =6
+

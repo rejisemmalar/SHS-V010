@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 43,
+    "BindingErrorCount": 44,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -172,6 +172,7 @@
     "Dashboard 4",
     "Inbox 4",
     "For Approval 4",
-    "MyProfile(Approver4)"
+    "MyProfile(Approver4)",
+    "Test"
   ]
 }

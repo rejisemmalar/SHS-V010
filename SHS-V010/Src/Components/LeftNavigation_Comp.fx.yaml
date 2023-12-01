@@ -1,0 +1,65 @@
+LeftNavigation_Comp As CanvasComponent:
+    Fill: =RGBA(202, 202, 202, 1)
+    Height: =App.Height-125
+    MenuItems: |-
+        =Table(
+            {
+                Title: "Dashboard",
+                Screen: Dashboard,
+                Icon: Icon.DetailList
+            }
+        )
+    MenuWidth: =If(VarOpenMenu,Max(App.DesignWidth,App.Width)/5-30,70)
+    Width: =LeftNavigation_Comp.MenuWidth
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    MenuIcon As icon.Hamburger:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =42
+        Icon: =Icon.Hamburger
+        OnSelect: =Set(VarOpenMenu,!VarOpenMenu)
+        Width: =41
+        X: =16
+        Y: =16
+        ZIndex: =1
+
+    menuNav As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =Parent.Height
+        Items: =menuite
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =56
+        Width: =Parent.Width
+        Y: =79
+        ZIndex: =2
+
+        Rectangle6 As rectangle:
+            BorderColor: =RGBA(65, 105, 10, 1)
+            Fill: =RGBA(128, 128, 128, 1)
+            Height: =53
+            OnSelect: =Select(Parent)
+            Width: =5
+            ZIndex: =1
+
+        NavIcons As icon.Home:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =Parent.TemplateHeight
+            Icon: =Icon.Home
+            OnSelect: =Select(Parent)
+            Width: =32
+            X: =18
+            ZIndex: =2
+
+        Label39 As label:
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            PaddingLeft: =75
+            Size: =12
+            Text: ="DashBoard"
+            Width: =Parent.Width
+            ZIndex: =3
+

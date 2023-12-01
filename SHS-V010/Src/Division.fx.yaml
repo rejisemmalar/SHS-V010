@@ -891,6 +891,7 @@ Division As screen:
         Form10 As form:
             DataSource: =Division_1
             Height: =321
+            Item: =Gallery6.Selected
             Width: =1059
             Y: =93
             ZIndex: =2
@@ -1493,7 +1494,7 @@ Division As screen:
             ZIndex: =3
 
         Button22_1 As button:
-            Text: ="Save"
+            Text: ="Cancel"
             X: =496
             Y: =458
             ZIndex: =4

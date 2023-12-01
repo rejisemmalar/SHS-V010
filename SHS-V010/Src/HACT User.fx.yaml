@@ -237,8 +237,14 @@
         ZIndex: =15
 
     Label39_3 As label:
-        Text: ="User "
+        Text: ="User Role"
         X: =838
         Y: =343
         ZIndex: =16
+
+    Label39_4 As label:
+        Text: ="User Role"
+        X: =1067
+        Y: =343
+        ZIndex: =17
 

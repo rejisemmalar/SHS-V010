@@ -1233,6 +1233,71 @@ Division As screen:
                         Y: =DataCardKey71.Y
                         ZIndex: =4
 
+                "'First Approver_DataCard4' As typedDataCard.comboBoxMultiSelectEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="FirstApprover"
+                    Default: =ThisItem.'First Approver'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Division_1],DataSourceInfo.DisplayName,"FirstApprover")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =true
+                    Update: =DataCardValue72.SelectedItems
+                    Width: =335
+                    X: =2
+                    Y: =1
+                    ZIndex: =3
+
+                    DataCardKey72 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue72 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Choices([@Division_1].FirstApprover)
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =Choices(Division_1.FirstApprover,DataCardValue72.SearchText)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey72.Y + DataCardKey72.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage64 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue72.Y + DataCardValue72.Height
+                        ZIndex: =3
+
+                    StarVisible64 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey72.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey72.Y
+                        ZIndex: =4
+
                 "'Second Approver_DataCard4' As typedDataCard.comboBoxMultiSelectEditCard":
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="SecondApprover"
@@ -1361,71 +1426,6 @@ Division As screen:
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKey74.Y
-                        ZIndex: =4
-
-                "'First Approver_DataCard4' As typedDataCard.comboBoxMultiSelectEditCard":
-                    BorderStyle: =BorderStyle.Solid
-                    DataField: ="FirstApprover"
-                    Default: =ThisItem.'First Approver'
-                    DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@Division_1],DataSourceInfo.DisplayName,"FirstApprover")
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
-                    Required: =true
-                    Update: =DataCardValue72.SelectedItems
-                    Width: =335
-                    X: =2
-                    Y: =1
-                    ZIndex: =3
-
-                    DataCardKey72 As label:
-                        AutoHeight: =true
-                        Height: =34
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
-                    DataCardValue72 As combobox:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        DefaultSelectedItems: =Parent.Default
-                        DisplayFields: =["Value"]
-                        DisplayMode: =Parent.DisplayMode
-                        Items: =Choices([@Division_1].FirstApprover)
-                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                        SearchFields: =["Value"]
-                        SearchItems: =Choices(Division_1.FirstApprover,DataCardValue72.SearchText)
-                        Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey72.Y + DataCardKey72.Height + 5
-                        ZIndex: =2
-
-                    ErrorMessage64 As label:
-                        AutoHeight: =true
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue72.Y + DataCardValue72.Height
-                        ZIndex: =3
-
-                    StarVisible64 As label:
-                        Align: =Align.Center
-                        Height: =DataCardKey72.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey72.Y
                         ZIndex: =4
 
                 "'Fourth Approver_DataCard4' As typedDataCard.comboBoxMultiSelectEditCard":

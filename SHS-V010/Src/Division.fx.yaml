@@ -1495,7 +1495,7 @@ Division As screen:
 
             Button25 As button:
                 OnSelect: |-
-                    =SubmitForm(Form12);UpdateContext({showeditpopup:false})
+                    =SubmitForm(Form12);UpdateContext({showeditpopup:false});Notify("The division has been updated successfully",NotificationType.Success)
                 Text: ="Save"
                 X: =54
                 Y: =396

@@ -1345,7 +1345,7 @@
 
         Button10 As button:
             OnSelect: |-
-                =SubmitForm(Form4);UpdateContext({showeditshsuser:false});Notify("The SHS user has been updated successfully",NotificationType.Success)
+                =SubmitForm(Form10);UpdateContext({showeditshsuser:false});Notify("The SHS user has been updated successfully",NotificationType.Success)
             Text: ="Save"
             X: =49
             Y: =420

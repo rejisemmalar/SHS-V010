@@ -878,7 +878,12 @@ Division As screen:
         ZIndex: =19
 
         Label41 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =46
+            Size: =20
             Text: ="Edit Division"
+            Width: =222
             X: =15
             Y: =15
             ZIndex: =1

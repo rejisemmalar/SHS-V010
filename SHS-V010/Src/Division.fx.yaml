@@ -772,6 +772,7 @@ Division As screen:
 
     Label39 As label:
         Height: =50
+        Size: =20
         Text: ="Division Code"
         Width: =186
         X: =291

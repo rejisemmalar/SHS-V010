@@ -228,7 +228,9 @@
             DataSource: ='SHS-Users_1'
             DefaultMode: =FormMode.New
             Height: =299
-            Width: =1003
+            Item: =Gallery6.Selected
+            Width: =971
+            X: =30
             Y: =102
             ZIndex: =5
 
@@ -243,7 +245,7 @@
                 MaxLength: =DataSourceInfo([@'SHS-Users_1'], DataSourceInfo.MaxLength, "Title")
                 Required: =true
                 Update: =DataCardValue27.Text
-                Width: =334
+                Width: =323
                 X: =0
                 Y: =0
                 ZIndex: =6
@@ -310,7 +312,7 @@
                 Height: =50
                 Required: =true
                 Update: =Value(DataCardValue28.Text)
-                Width: =334
+                Width: =323
                 X: =1
                 Y: =0
                 ZIndex: =6
@@ -378,7 +380,7 @@
                 MaxLength: =DataSourceInfo([@'SHS-Users_1'], DataSourceInfo.MaxLength, "Email")
                 Required: =true
                 Update: =DataCardValue29.Text
-                Width: =334
+                Width: =323
                 X: =2
                 Y: =0
                 ZIndex: =6
@@ -446,7 +448,7 @@
                 MaxLength: =DataSourceInfo([@'SHS-Users_1'], DataSourceInfo.MaxLength, "Designation")
                 Required: =true
                 Update: =DataCardValue30.Text
-                Width: =334
+                Width: =323
                 X: =0
                 Y: =1
                 ZIndex: =6
@@ -514,7 +516,7 @@
                 MaxLength: =DataSourceInfo([@'SHS-Users_1'], DataSourceInfo.MaxLength, "NT_x0020_Login")
                 Required: =true
                 Update: =DataCardValue31.Text
-                Width: =334
+                Width: =323
                 X: =1
                 Y: =1
                 ZIndex: =6
@@ -582,7 +584,7 @@
                 MaxLength: =DataSourceInfo([@'SHS-Users_1'], DataSourceInfo.MaxLength, "Stakeholder")
                 Required: =true
                 Update: =DataCardValue32.Text
-                Width: =334
+                Width: =323
                 X: =2
                 Y: =1
                 ZIndex: =6
@@ -649,7 +651,7 @@
                 Height: =50
                 Required: =true
                 Update: =DataCardValue33.Selected
-                Width: =334
+                Width: =323
                 X: =0
                 Y: =2
                 ZIndex: =6
@@ -715,7 +717,7 @@
                 Height: =50
                 Required: =true
                 Update: =DataCardValue34.Selected
-                Width: =334
+                Width: =323
                 X: =1
                 Y: =2
                 ZIndex: =6

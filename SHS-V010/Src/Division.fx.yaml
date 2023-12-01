@@ -870,3 +870,11 @@ Division As screen:
         Width: =1366
         ZIndex: =18
 
+    Container28 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(238, 204, 204, 1)
+        Height: =456
+        Width: =1005
+        X: =216
+        Y: =195
+        ZIndex: =19
+

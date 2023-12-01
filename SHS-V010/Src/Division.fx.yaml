@@ -771,15 +771,19 @@ Division As screen:
             ZIndex: =4
 
     Label39 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
         Height: =50
         Size: =20
         Text: ="Division Code"
-        Width: =186
+        Width: =212
         X: =291
         Y: =307
         ZIndex: =13
 
     Label39_1 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
         Height: =50
         Size: =20
         Text: ="Division Name"
@@ -789,7 +793,10 @@ Division As screen:
         ZIndex: =14
 
     Label39_2 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
         Height: =50
+        Size: =20
         Text: ="Action"
         Width: =186
         X: =962

@@ -865,66 +865,6 @@ Division As screen:
             Y: =27
             ZIndex: =4
 
-    Container29 As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(128, 128, 128, 0.34)
-        Height: =768
-        Width: =1366
-        ZIndex: =19
-
-    Container30 As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(238, 204, 204, 1)
-        Height: =376
-        Width: =813
-        X: =392
-        Y: =235
-        ZIndex: =20
-
-        Label45 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Height: =64
-            Size: =30
-            Text: ="Confirmation"
-            Width: =362
-            X: =156
-            Y: =27
-            ZIndex: =1
-
-        Icon17 As icon.HorizontalLine:
-            BorderThickness: =1
-            Height: =0
-            Icon: =Icon.HorizontalLine
-            Width: =802
-            Y: =91
-            ZIndex: =2
-
-        Label46 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Height: =62
-            Size: =20
-            Text: ="Are you sure you want to delete?"
-            Width: =610
-            X: =114
-            Y: =129
-            ZIndex: =3
-
-        Button26 As button:
-            OnSelect: |-
-                =Remove(Division_1,Gallery8.Selected);UpdateContext({varshowdeletepopup:false})
-            Text: ="Yes"
-            X: =63
-            Y: =246
-            ZIndex: =4
-
-        Button26_1 As button:
-            OnSelect: |-
-                =UpdateContext({varshowdeletepopup:false})
-            Text: ="No"
-            X: =372
-            Y: =246
-            ZIndex: =5
-
     showeditpopupdiv As group:
         Height: =5
         Width: =5
@@ -1568,4 +1508,71 @@ Division As screen:
                 X: =406
                 Y: =396
                 ZIndex: =4
+
+    showdeletedivpopup As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =21
+
+        Container29 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(128, 128, 128, 0.34)
+            Height: =768
+            Width: =1366
+            ZIndex: =19
+
+        Container30 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =376
+            Width: =813
+            X: =392
+            Y: =235
+            ZIndex: =20
+
+            Label45 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =64
+                Size: =30
+                Text: ="Confirmation"
+                Width: =362
+                X: =156
+                Y: =27
+                ZIndex: =1
+
+            Icon17 As icon.HorizontalLine:
+                BorderThickness: =1
+                Height: =0
+                Icon: =Icon.HorizontalLine
+                Width: =802
+                Y: =91
+                ZIndex: =2
+
+            Label46 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =62
+                Size: =20
+                Text: ="Are you sure you want to delete?"
+                Width: =610
+                X: =114
+                Y: =129
+                ZIndex: =3
+
+            Button26 As button:
+                OnSelect: |-
+                    =Remove(Division_1,Gallery8.Selected);UpdateContext({varshowdeletepopup:false})
+                Text: ="Yes"
+                X: =63
+                Y: =246
+                ZIndex: =4
+
+            Button26_1 As button:
+                OnSelect: |-
+                    =UpdateContext({varshowdeletepopup:false})
+                Text: ="No"
+                X: =372
+                Y: =246
+                ZIndex: =5
 

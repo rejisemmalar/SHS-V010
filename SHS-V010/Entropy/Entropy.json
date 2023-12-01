@@ -776,6 +776,7 @@
     "Settings": 687,
     "Settings(com)": 127,
     "Settings(com)_1": 689,
+    "showdeletedivpopup": 977,
     "showeditpopupdiv": 968,
     "Stakeholder_Column1": 387,
     "Stakeholder_DataCard1": 475,
@@ -853,7 +854,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/01/2023 08:47:29",
+  "HeaderLastSavedDateTimeUTC": "12/01/2023 08:47:52",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "d5d288d0-8556-4a38-a03d-f5517ce3059c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/6b09e5d9e40c401a9964269a06a6ff10\""
@@ -947,6 +948,10 @@
     "Subfactors_1": 18
   },
   "OrderGroupControls": {
+    "showdeletedivpopup": {
+      "Container29": 1,
+      "Container30": 0
+    },
     "showeditpopupdiv": {
       "Container27": 1,
       "Container28": 0
@@ -1726,6 +1731,7 @@
     "Settings": {},
     "Settings(com)": {},
     "Settings(com)_1": {},
+    "showdeletedivpopup": {},
     "showeditpopupdiv": {},
     "Stakeholder_Column1": {},
     "Stakeholder_DataCard1": {},
@@ -2559,6 +2565,7 @@
     "Settings": 719,
     "Settings(com)": 135,
     "Settings(com)_1": 377,
+    "showdeletedivpopup": 0,
     "showeditpopupdiv": 56,
     "Stakeholder_Column1": 434,
     "Stakeholder_DataCard1": 503,

@@ -874,12 +874,14 @@ Division As screen:
         Container25 As groupContainer.manualLayoutContainer:
             Fill: =RGBA(166, 166, 166, 0.49)
             Height: =756
+            Visible: =showeditdivpopup
             Width: =1366
             ZIndex: =17
 
         Container26 As groupContainer.manualLayoutContainer:
             Fill: =RGBA(238, 204, 204, 1)
             Height: =544
+            Visible: =showeditdivpopup
             Width: =1012
             X: =244
             Y: =181

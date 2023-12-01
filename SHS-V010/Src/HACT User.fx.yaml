@@ -225,6 +225,7 @@
 
         Form4 As form:
             DataSource: ='SHS-Users_1'
+            DefaultMode: =FormMode.New
             Height: =299
             Width: =1003
             Y: =102

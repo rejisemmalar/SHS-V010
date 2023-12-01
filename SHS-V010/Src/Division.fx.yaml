@@ -821,3 +821,22 @@ Division As screen:
             Y: =27
             ZIndex: =4
 
+    Gallery8 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =383
+        Items: =Division_1
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =136
+        Width: =1099
+        X: =267
+        Y: =384
+        ZIndex: =17
+
+        Label43 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Division Code'
+            X: =39
+            Y: =15
+            ZIndex: =1
+

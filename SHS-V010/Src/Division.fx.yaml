@@ -836,7 +836,7 @@ Division As screen:
             Fill: =RGBA(5, 120, 24, 1)
             HoverFill: =Color.Green
             OnSelect: |-
-                =SubmitForm(Form1);NewForm(Form1);UpdateContext({ShowPopup: false});
+                =SubmitForm(Form1);NewForm(Form1);UpdateContext({ShowPopup: false});Notify("The division has been added successfully",NotificationType.Success)
             PressedColor: =Color.White
             PressedFill: =Color.Green
             Text: ="Save"

@@ -916,7 +916,9 @@ Division As screen:
             ZIndex: =4
 
         Button26_1 As button:
-            Text: ="Yes"
+            OnSelect: |-
+                =UpdateContext({varshowdeletepopup:false})
+            Text: ="No"
             X: =372
             Y: =246
             ZIndex: =5

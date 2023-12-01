@@ -4724,6 +4724,246 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.'Display Name_DataCard1'.DataCardValue27.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.'Display Name_DataCard1'.DataCardValue27.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HACT User",
+                "type": "'HACT User'.Container33.Form4.'Display Name_DataCard1'.DataCardValue27"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.'PR Number_DataCard2'.DataCardValue28.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.'PR Number_DataCard2'.DataCardValue28.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HACT User",
+                "type": "'HACT User'.Container33.Form4.'PR Number_DataCard2'.DataCardValue28"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.Email_DataCard1.DataCardValue29.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.Email_DataCard1.DataCardValue29.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HACT User",
+                "type": "'HACT User'.Container33.Form4.Email_DataCard1.DataCardValue29"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.Designation_DataCard2.DataCardValue30.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.Designation_DataCard2.DataCardValue30.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HACT User",
+                "type": "'HACT User'.Container33.Form4.Designation_DataCard2.DataCardValue30"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.'NT Login_DataCard1'.DataCardValue31.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.'NT Login_DataCard1'.DataCardValue31.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HACT User",
+                "type": "'HACT User'.Container33.Form4.'NT Login_DataCard1'.DataCardValue31"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.Stakeholder_DataCard2.DataCardValue32.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.Stakeholder_DataCard2.DataCardValue32.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HACT User",
+                "type": "'HACT User'.Container33.Form4.Stakeholder_DataCard2.DataCardValue32"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.Division_DataCard1.DataCardValue33.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.Division_DataCard1.DataCardValue33.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HACT User",
+                "type": "'HACT User'.Container33.Form4.Division_DataCard1.DataCardValue33"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.'User Role_DataCard1'.DataCardValue34.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'HACT User'.Container33.Form4.'User Role_DataCard1'.DataCardValue34.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HACT User",
+                "type": "'HACT User'.Container33.Form4.'User Role_DataCard1'.DataCardValue34"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.dashboard"
                 }
               ],

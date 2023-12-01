@@ -67,7 +67,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Add doc_Button",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 688,
+        "PublishOrderIndex": 689,
         "Rules": [
           {
             "Category": "Design",
@@ -363,7 +363,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Add doc_Button",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 689,
+        "PublishOrderIndex": 690,
         "Rules": [
           {
             "Category": "Data",

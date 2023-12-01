@@ -1,9 +1,5 @@
 "'HACT User' As screen":
 
-    Component1_16 As Component1:
-        CurrentScreen: ="Settings"
-        Height: =768
-
     Gallery6 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =360
@@ -60,6 +56,11 @@
             Y: =15
             ZIndex: =6
 
+    Component1_16 As Component1:
+        CurrentScreen: ="Settings"
+        Height: =768
+        ZIndex: =2
+
     Arrow1_11 As arrow.backArrow:
         Fill: =RGBA(0, 18, 107, 1)
         Height: =26
@@ -67,7 +68,7 @@
         Width: =26
         X: =306
         Y: =135
-        ZIndex: =2
+        ZIndex: =3
 
     Label12_7 As label:
         FontWeight: =FontWeight.Bold
@@ -75,7 +76,7 @@
         Text: ="HACT User"
         X: =306
         Y: =180
-        ZIndex: =3
+        ZIndex: =4
 
     Icon5_11 As icon.HorizontalLine:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -92,7 +93,7 @@
         Width: =1050
         X: =306
         Y: =273
-        ZIndex: =4
+        ZIndex: =5
 
     Icon5_29 As icon.HorizontalLine:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -109,21 +110,21 @@
         Width: =1050
         X: =306
         Y: =317
-        ZIndex: =5
+        ZIndex: =6
 
     Search_21 As Search:
         Height: =47
         Width: =198
         X: =869
         Y: =195
-        ZIndex: =6
+        ZIndex: =7
 
     "'Add doc_Button_21' As 'Add doc_Button'":
         Height: =47
         Width: =161
         X: =1044
         Y: =195
-        ZIndex: =7
+        ZIndex: =8
 
     Button4_2 As button:
         Color: =Color.White
@@ -139,7 +140,7 @@
         Width: =85
         X: =1205
         Y: =200
-        ZIndex: =8
+        ZIndex: =9
 
     Icon15_3 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
@@ -148,14 +149,44 @@
         Width: =35
         X: =1205
         Y: =206
-        ZIndex: =9
+        ZIndex: =10
 
     Container32 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(204, 208, 225, 0.37)
         Height: =768
         Visible: =ShowPopup
         Width: =1366
-        ZIndex: =10
+        ZIndex: =11
+
+    "'Display Name' As label":
+        Text: ="Display Name"
+        X: =332
+        Y: =343
+        ZIndex: =12
+
+    Designation As label:
+        Text: ="Designation"
+        X: =525
+        Y: =343
+        ZIndex: =13
+
+    Stakeholder As label:
+        Text: ="Stakeholder"
+        X: =688
+        Y: =343
+        ZIndex: =14
+
+    "'User Role' As label":
+        Text: ="User Role"
+        X: =838
+        Y: =343
+        ZIndex: =15
+
+    "'Action(SHS_user)' As label":
+        Text: ="Action"
+        X: =1067
+        Y: =343
+        ZIndex: =16
 
     Container33 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(238, 204, 204, 1)
@@ -164,7 +195,7 @@
         Width: =1003
         X: =306
         Y: =195
-        ZIndex: =11
+        ZIndex: =17
 
         Label47 As label:
             Align: =Align.Center
@@ -189,34 +220,4 @@
             X: =388
             Y: =450
             ZIndex: =4
-
-    "'Display Name' As label":
-        Text: ="Display Name"
-        X: =332
-        Y: =343
-        ZIndex: =13
-
-    Designation As label:
-        Text: ="Designation"
-        X: =525
-        Y: =343
-        ZIndex: =14
-
-    Stakeholder As label:
-        Text: ="Stakeholder"
-        X: =688
-        Y: =343
-        ZIndex: =15
-
-    "'User Role' As label":
-        Text: ="User Role"
-        X: =838
-        Y: =343
-        ZIndex: =16
-
-    "'Action(SHS_user)' As label":
-        Text: ="Action"
-        X: =1067
-        Y: =343
-        ZIndex: =17
 

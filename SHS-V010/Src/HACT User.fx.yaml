@@ -202,7 +202,7 @@
         Y: =343
         ZIndex: =14
 
-    Label39_2 As label:
+    Stakeholder As label:
         Text: ="Stakeholder"
         X: =688
         Y: =343

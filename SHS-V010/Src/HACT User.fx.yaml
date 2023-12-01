@@ -41,7 +41,8 @@
             ZIndex: =4
 
         Button9 As button:
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =UpdateContext({showeditshsuser:true})
             Text: ="Edit"
             Width: =101
             X: =756

@@ -796,3 +796,9 @@
             Y: =21
             ZIndex: =1
 
+        Form10 As form:
+            Height: =310
+            Width: =985
+            Y: =80
+            ZIndex: =2
+

@@ -781,6 +781,7 @@ Division As screen:
 
     Label39_1 As label:
         Height: =50
+        Size: =20
         Text: ="Division Name"
         Width: =186
         X: =580

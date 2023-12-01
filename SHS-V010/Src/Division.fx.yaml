@@ -887,6 +887,7 @@ Division As screen:
         Form12 As form:
             DataSource: =Division_1
             Height: =285
+            Item: =Gallery8.Selected
             Width: =1005
             Y: =55
             ZIndex: =2
@@ -1185,9 +1186,12 @@ Division As screen:
                 DataCardValue71 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     Items: =Choices([@Division_1].Reviewer)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =Choices(Division_1.Reviewer,DataCardValue71.SearchText)
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
@@ -1247,9 +1251,12 @@ Division As screen:
                 DataCardValue72 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     Items: =Choices([@Division_1].FirstApprover)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =Choices(Division_1.FirstApprover,DataCardValue72.SearchText)
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
@@ -1309,9 +1316,12 @@ Division As screen:
                 DataCardValue73 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     Items: =Choices([@Division_1].SecondApprover)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =Choices(Division_1.SecondApprover,DataCardValue73.SearchText)
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
@@ -1371,9 +1381,12 @@ Division As screen:
                 DataCardValue74 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     Items: =Choices([@Division_1].ThirdApprover)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =Choices(Division_1.ThirdApprover,DataCardValue74.SearchText)
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
@@ -1433,9 +1446,12 @@ Division As screen:
                 DataCardValue75 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     Items: =Choices([@Division_1].FourthApprover)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =Choices(Division_1.FourthApprover,DataCardValue75.SearchText)
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30

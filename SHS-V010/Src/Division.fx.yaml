@@ -788,7 +788,7 @@ Division As screen:
 
     Label39_2 As label:
         Height: =50
-        Text: ="Text"
+        Text: ="Action"
         Width: =186
         X: =962
         Y: =307

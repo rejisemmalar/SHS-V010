@@ -208,6 +208,8 @@
             ZIndex: =1
 
         Button27 As button:
+            OnSelect: |-
+                =SubmitForm(Form4);NewForm(Form4);UpdateContext({ShowPopup:true})
             Text: ="Save"
             X: =52
             Y: =450

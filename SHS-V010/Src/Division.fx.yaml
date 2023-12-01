@@ -1,8 +1,26 @@
 Division As screen:
 
+    Icon5_27 As icon.HorizontalLine:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        Color: =RGBA(214, 223, 238, 1)
+        FocusedBorderThickness: =1
+        Height: =1
+        Icon: =Icon.HorizontalLine
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Rotation: =1
+        Width: =1050
+        X: =291
+        Y: =357
+        ZIndex: =1
+
     Component1_9 As Component1:
         CurrentScreen: ="Administration"
         Height: =768
+        ZIndex: =2
 
     Arrow1_4 As arrow.backArrow:
         Fill: =RGBA(0, 18, 107, 1)
@@ -11,7 +29,7 @@ Division As screen:
         Width: =32
         X: =291
         Y: =147
-        ZIndex: =2
+        ZIndex: =3
 
     Label12 As label:
         FontWeight: =FontWeight.Bold
@@ -19,7 +37,7 @@ Division As screen:
         Text: ="Division"
         X: =291
         Y: =202
-        ZIndex: =3
+        ZIndex: =4
 
     Icon5_3 As icon.HorizontalLine:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -36,21 +54,21 @@ Division As screen:
         Width: =1050
         X: =291
         Y: =273
-        ZIndex: =4
+        ZIndex: =5
 
     Search_20 As Search:
         Height: =47
         Width: =198
         X: =869
         Y: =195
-        ZIndex: =5
+        ZIndex: =6
 
     "'Add doc_Button_20' As 'Add doc_Button'":
         Height: =47
         Width: =161
         X: =1044
         Y: =195
-        ZIndex: =6
+        ZIndex: =7
 
     Icon15_1 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
@@ -59,7 +77,7 @@ Division As screen:
         Width: =35
         X: =1221
         Y: =206
-        ZIndex: =7
+        ZIndex: =8
 
     Button4_1 As button:
         Color: =Color.White
@@ -76,7 +94,7 @@ Division As screen:
         Width: =85
         X: =1208
         Y: =202
-        ZIndex: =8
+        ZIndex: =9
 
     Icon15_2 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
@@ -85,7 +103,7 @@ Division As screen:
         Width: =35
         X: =1208
         Y: =206
-        ZIndex: =9
+        ZIndex: =10
 
     Container7 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Regular
@@ -93,63 +111,84 @@ Division As screen:
         Height: =768
         Visible: =ShowPopup
         Width: =1366
-        ZIndex: =10
-
-    DataTable2 As dataTable.datatable:
-        BorderStyle: =BorderStyle.Solid
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
-        HeadingFill: =RGBA(102, 102, 102, 1)
-        HeadingSize: =15
-        Height: =423
-        Items: =Division_1
-        SelectedFill: =RGBA(255, 255, 255, 1)
-        Width: =1041
-        X: =300
-        Y: =325
         ZIndex: =11
 
-        "'Division Name_Column1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Division Name"
-            FieldName: ="Title"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.'Division Name'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =5
+    "'Division Code' As label":
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        Size: =20
+        Text: ="Division Code"
+        Width: =212
+        X: =291
+        Y: =307
+        ZIndex: =12
 
-        "'Division Code_Column1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Division Code"
-            FieldName: ="DivisionCode"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =2
+    "'Division Name' As label":
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        Size: =20
+        Text: ="Division Name"
+        Width: =246
+        X: =580
+        Y: =307
+        ZIndex: =13
+
+    Action As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        Size: =20
+        Text: ="Action"
+        Width: =186
+        X: =962
+        Y: =307
+        ZIndex: =14
+
+    Gallery8 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =383
+        Items: =Division_1
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =118
+        Width: =1099
+        X: =267
+        Y: =384
+        ZIndex: =15
+
+        Button24 As button:
+            OnSelect: |-
+                =UpdateContext({showeditpopup:true})
+            Text: ="Edit"
+            Width: =96
+            X: =662
+            Y: =15
+            ZIndex: =1
+
+        Label43 As label:
+            OnSelect: =Select(Parent)
             Text: =ThisItem.'Division Code'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =6
+            X: =39
+            Y: =15
+            ZIndex: =2
 
-        Action_Column2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Action"
-            FieldName: ="Action"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =3
-            Text: =ThisItem.Action
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =7
+        Label43_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Division Name'
+            X: =360
+            Y: =15
+            ZIndex: =3
+
+        Button24_1 As button:
+            OnSelect: |-
+                =UpdateContext({varshowdeletepopup:true})
+            Text: ="Delete"
+            Width: =96
+            X: =804
+            Y: =15
+            ZIndex: =4
 
     Container8 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Bold
@@ -159,7 +198,7 @@ Division As screen:
         Width: =1258
         X: =60
         Y: =30
-        ZIndex: =12
+        ZIndex: =16
 
         Form1 As form:
             DataSource: =Division_1
@@ -797,7 +836,7 @@ Division As screen:
             Fill: =RGBA(5, 120, 24, 1)
             HoverFill: =Color.Green
             OnSelect: |-
-                =SubmitForm(Form1);NewForm(Form1);UpdateContext({ShowPopup: false});
+                =SubmitForm(Form1);NewForm(Form1);UpdateContext({ShowPopup: false});Notify("The division has been added successfully",NotificationType.Success)
             PressedColor: =Color.White
             PressedFill: =Color.Green
             Text: ="Save"
@@ -825,4 +864,717 @@ Division As screen:
             X: =33
             Y: =27
             ZIndex: =4
+
+    showeditpopupdiv As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =20
+
+        Container27 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(166, 166, 166, 0.41)
+            Height: =768
+            Visible: =showeditpopup
+            Width: =1366
+            ZIndex: =17
+
+        Container28 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =456
+            Visible: =showeditpopup
+            Width: =1005
+            X: =216
+            Y: =195
+            ZIndex: =18
+
+            Label44 As label:
+                Text: ="Edit Division"
+                X: =21
+                Y: =15
+                ZIndex: =1
+
+            Form12 As form:
+                DataSource: =Division_1
+                Height: =285
+                Item: =Gallery8.Selected
+                Width: =1005
+                Y: =55
+                ZIndex: =2
+
+                "'Division Name_DataCard4' As typedDataCard.textualEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Title"
+                    Default: =ThisItem.'Division Name'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Division_1],DataSourceInfo.DisplayName,"Title")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Division_1], DataSourceInfo.MaxLength, "Title")
+                    Required: =true
+                    Update: =DataCardValue66.Text
+                    Width: =335
+                    X: =0
+                    Y: =0
+                    ZIndex: =3
+
+                    DataCardKey66 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue66 As text:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey66.Y + DataCardKey66.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage58 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue66.Y + DataCardValue66.Height
+                        ZIndex: =3
+
+                    StarVisible58 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey66.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey66.Y
+                        ZIndex: =4
+
+                "'Division Code_DataCard4' As typedDataCard.textualEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="DivisionCode"
+                    Default: =ThisItem.'Division Code'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Division_1],DataSourceInfo.DisplayName,"DivisionCode")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Division_1], DataSourceInfo.MaxLength, "DivisionCode")
+                    Required: =true
+                    Update: =DataCardValue67.Text
+                    Width: =335
+                    X: =1
+                    Y: =0
+                    ZIndex: =3
+
+                    DataCardKey67 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue67 As text:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey67.Y + DataCardKey67.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage59 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue67.Y + DataCardValue67.Height
+                        ZIndex: =3
+
+                    StarVisible59 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey67.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey67.Y
+                        ZIndex: =4
+
+                Admin_DataCard4 As typedDataCard.comboBoxMultiSelectEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Admin"
+                    Default: =ThisItem.Admin
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Division_1],DataSourceInfo.DisplayName,"Admin")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =true
+                    Update: =DataCardValue69.SelectedItems
+                    Width: =335
+                    X: =2
+                    Y: =0
+                    ZIndex: =3
+
+                    DataCardKey69 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue69 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Choices([@Division_1].Admin)
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =Choices(Division_1.Admin,DataCardValue69.SearchText)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey69.Y + DataCardKey69.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage61 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue69.Y + DataCardValue69.Height
+                        ZIndex: =3
+
+                    StarVisible61 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey69.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey69.Y
+                        ZIndex: =4
+
+                Champion_DataCard4 As typedDataCard.comboBoxMultiSelectEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Champion"
+                    Default: =ThisItem.Champion
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Division_1],DataSourceInfo.DisplayName,"Champion")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =true
+                    Update: =DataCardValue70.SelectedItems
+                    Width: =335
+                    X: =0
+                    Y: =1
+                    ZIndex: =3
+
+                    DataCardKey70 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue70 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Choices([@Division_1].Champion)
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =Choices(Division_1.Champion,DataCardValue70.SearchText)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey70.Y + DataCardKey70.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage62 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue70.Y + DataCardValue70.Height
+                        ZIndex: =3
+
+                    StarVisible62 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey70.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey70.Y
+                        ZIndex: =4
+
+                Reviewer_DataCard4 As typedDataCard.comboBoxMultiSelectEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Reviewer"
+                    Default: =ThisItem.Reviewer
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Division_1],DataSourceInfo.DisplayName,"Reviewer")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =true
+                    Update: =DataCardValue71.SelectedItems
+                    Width: =335
+                    X: =1
+                    Y: =1
+                    ZIndex: =3
+
+                    DataCardKey71 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue71 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Choices([@Division_1].Reviewer)
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =Choices(Division_1.Reviewer,DataCardValue71.SearchText)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey71.Y + DataCardKey71.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage63 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue71.Y + DataCardValue71.Height
+                        ZIndex: =3
+
+                    StarVisible63 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey71.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey71.Y
+                        ZIndex: =4
+
+                "'Second Approver_DataCard4' As typedDataCard.comboBoxMultiSelectEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="SecondApprover"
+                    Default: =ThisItem.'Second Approver'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Division_1],DataSourceInfo.DisplayName,"SecondApprover")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =false
+                    Update: =DataCardValue73.SelectedItems
+                    Width: =335
+                    X: =0
+                    Y: =2
+                    ZIndex: =3
+
+                    DataCardKey73 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue73 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Choices([@Division_1].SecondApprover)
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =Choices(Division_1.SecondApprover,DataCardValue73.SearchText)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey73.Y + DataCardKey73.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage65 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue73.Y + DataCardValue73.Height
+                        ZIndex: =3
+
+                    StarVisible65 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey73.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey73.Y
+                        ZIndex: =4
+
+                "'Third Approver_DataCard4' As typedDataCard.comboBoxMultiSelectEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ThirdApprover"
+                    Default: =ThisItem.'Third Approver'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Division_1],DataSourceInfo.DisplayName,"ThirdApprover")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =false
+                    Update: =DataCardValue74.SelectedItems
+                    Width: =335
+                    X: =1
+                    Y: =2
+                    ZIndex: =3
+
+                    DataCardKey74 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue74 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Choices([@Division_1].ThirdApprover)
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =Choices(Division_1.ThirdApprover,DataCardValue74.SearchText)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey74.Y + DataCardKey74.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage66 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue74.Y + DataCardValue74.Height
+                        ZIndex: =3
+
+                    StarVisible66 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey74.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey74.Y
+                        ZIndex: =4
+
+                "'First Approver_DataCard4' As typedDataCard.comboBoxMultiSelectEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="FirstApprover"
+                    Default: =ThisItem.'First Approver'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Division_1],DataSourceInfo.DisplayName,"FirstApprover")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =true
+                    Update: =DataCardValue72.SelectedItems
+                    Width: =335
+                    X: =2
+                    Y: =1
+                    ZIndex: =3
+
+                    DataCardKey72 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue72 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Choices([@Division_1].FirstApprover)
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =Choices(Division_1.FirstApprover,DataCardValue72.SearchText)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey72.Y + DataCardKey72.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage64 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue72.Y + DataCardValue72.Height
+                        ZIndex: =3
+
+                    StarVisible64 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey72.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey72.Y
+                        ZIndex: =4
+
+                "'Fourth Approver_DataCard4' As typedDataCard.comboBoxMultiSelectEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="FourthApprover"
+                    Default: =ThisItem.'Fourth Approver'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Division_1],DataSourceInfo.DisplayName,"FourthApprover")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =false
+                    Update: =DataCardValue75.SelectedItems
+                    Width: =335
+                    X: =2
+                    Y: =2
+                    ZIndex: =3
+
+                    DataCardKey75 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue75 As combobox:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        Items: =Choices([@Division_1].FourthApprover)
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =Choices(Division_1.FourthApprover,DataCardValue75.SearchText)
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey75.Y + DataCardKey75.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage67 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue75.Y + DataCardValue75.Height
+                        ZIndex: =3
+
+                    StarVisible67 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey75.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey75.Y
+                        ZIndex: =4
+
+            Button25 As button:
+                OnSelect: |-
+                    =SubmitForm(Form12);UpdateContext({showeditpopup:false});Notify("The division has been updated successfully",NotificationType.Success)
+                Text: ="Save"
+                X: =54
+                Y: =396
+                ZIndex: =3
+
+            Button25_1 As button:
+                OnSelect: |-
+                    =UpdateContext({showeditpopup:false})
+                Text: ="cancel"
+                X: =406
+                Y: =396
+                ZIndex: =4
+
+    showdeletedivpopup As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =21
+
+        Container29 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(128, 128, 128, 0.34)
+            Height: =768
+            Visible: =varshowdeletepopup
+            Width: =1366
+            ZIndex: =19
+
+        Container30 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(238, 204, 204, 1)
+            Height: =376
+            Visible: =varshowdeletepopup
+            Width: =813
+            X: =392
+            Y: =235
+            ZIndex: =20
+
+            Label45 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =64
+                Size: =30
+                Text: ="Confirmation"
+                Width: =362
+                X: =156
+                Y: =27
+                ZIndex: =1
+
+            Icon17 As icon.HorizontalLine:
+                BorderThickness: =1
+                Height: =0
+                Icon: =Icon.HorizontalLine
+                Width: =802
+                Y: =91
+                ZIndex: =2
+
+            Label46 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =62
+                Size: =20
+                Text: ="Are you sure you want to delete?"
+                Width: =610
+                X: =114
+                Y: =129
+                ZIndex: =3
+
+            Button26 As button:
+                OnSelect: |-
+                    =Remove(Division_1,Gallery8.Selected);UpdateContext({varshowdeletepopup:false});Notify("The division has been deleted successfully",NotificationType.Success)
+                Text: ="Yes"
+                X: =63
+                Y: =246
+                ZIndex: =4
+
+            Button26_1 As button:
+                OnSelect: |-
+                    =UpdateContext({varshowdeletepopup:false})
+                Text: ="No"
+                X: =372
+                Y: =246
+                ZIndex: =5
 

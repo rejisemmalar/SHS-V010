@@ -786,7 +786,7 @@
         ZIndex: =19
 
         Label41 As label:
-            Text: ="Text"
+            Text: ="Edit SHS User"
             X: =30
             Y: =21
             ZIndex: =1

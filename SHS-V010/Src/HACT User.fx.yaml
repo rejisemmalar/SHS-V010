@@ -3,7 +3,7 @@
     Gallery6 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =360
-        Items: =CustomGallerySample
+        Items: ='SHS-Users_1'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =126
@@ -14,28 +14,28 @@
 
         Label40 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.SampleHeading
+            Text: =ThisItem.'Display Name'
             X: =27
             Y: =15
             ZIndex: =1
 
         Label40_1 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.SampleHeading
+            Text: =ThisItem.'PR Number'
             X: =223
             Y: =15
             ZIndex: =2
 
         Label40_2 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.SampleHeading
+            Text: =ThisItem.Email
             X: =411
             Y: =15
             ZIndex: =3
 
         Label40_3 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.SampleHeading
+            Text: =ThisItem.Designation
             X: =591
             Y: =15
             ZIndex: =4

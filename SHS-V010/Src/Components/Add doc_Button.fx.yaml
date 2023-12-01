@@ -1,0 +1,28 @@
+"'Add doc_Button' As CanvasComponent":
+    Fill: =RGBA(23, 133, 11, 0)
+    Height: =45
+    Width: =160
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Button2 As button:
+        Fill: =RGBA(7, 99, 33, 1)
+        Height: =33
+        HoverFill: =RGBA(2, 48, 2, 1)
+        PaddingLeft: =45
+        Text: ="Export"
+        Width: =122
+        X: =24
+        Y: =5
+        ZIndex: =1
+
+    Icon8 As icon.AddDocument:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =35
+        Icon: =Icon.AddDocument
+        Width: =30
+        X: =36
+        Y: =3
+        ZIndex: =2
+

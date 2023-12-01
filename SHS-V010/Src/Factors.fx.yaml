@@ -1,0 +1,326 @@
+Factors As screen:
+
+    Component1_12 As Component1:
+        CurrentScreen: ="Administration"
+        Height: =768
+
+    Arrow1_7 As arrow.backArrow:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =34
+        OnSelect: =Navigate(Administration)
+        Width: =32
+        X: =291
+        Y: =147
+        ZIndex: =2
+
+    Label12_3 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =17
+        Text: ="Factors"
+        X: =291
+        Y: =208
+        ZIndex: =3
+
+    Search_7 As Search:
+        X: =891
+        Y: =195
+        ZIndex: =4
+
+    Icon5_6 As icon.HorizontalLine:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        Color: =RGBA(214, 223, 238, 1)
+        FocusedBorderThickness: =1
+        Height: =1
+        Icon: =Icon.HorizontalLine
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Rotation: =1
+        Width: =1050
+        X: =291
+        Y: =273
+        ZIndex: =5
+
+    "'Add doc_Button_7' As 'Add doc_Button'":
+        X: =1060
+        Y: =195
+        ZIndex: =6
+
+    Button4_4 As button:
+        Color: =Color.White
+        Fill: =RGBA(7, 99, 33, 1)
+        Height: =33
+        OnSelect: |-
+            =UpdateContext({ShowPopup : true});
+        PaddingLeft: =35
+        Text: ="Add"
+        Width: =85
+        X: =1233
+        Y: =202
+        ZIndex: =7
+
+    Icon18 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =32
+        Icon: =Icon.Add
+        Width: =20
+        X: =1244
+        Y: =203
+        ZIndex: =8
+
+    DataTable5 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =379
+        Items: =Factor_2
+        Width: =1032
+        X: =309
+        Y: =360
+        ZIndex: =9
+
+        "'Factor Code_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Factor Code"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.'Factor Code'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        "'Factor Name_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Factor Name"
+            FieldName: ="FactorName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'Factor Name'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+        Action_Column5 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Action"
+            FieldName: ="Action"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Action
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+        "'Map Division_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Map Division"
+            FieldName: ="MapDivision"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'Map Division'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =10
+
+    Container15 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(153, 207, 236, 0.67)
+        Height: =768
+        Visible: =ShowPopup
+        Width: =1366
+        ZIndex: =10
+
+    Container16 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(0, 121, 187, 1)
+        Height: =575
+        Visible: =ShowPopup
+        Width: =1011
+        X: =253
+        Y: =128
+        ZIndex: =11
+
+        Label34 As label:
+            FontWeight: =FontWeight.Bold
+            Size: =20
+            Text: ="Add Factor"
+            Width: =263
+            X: =40
+            Y: =36
+            ZIndex: =2
+
+        Button13 As button:
+            OnSelect: |-
+                =SubmitForm(Form8);NewForm(Form8);
+                UpdateContext({ShowPopup:false});
+            Text: ="Save"
+            X: =567
+            Y: =447
+            ZIndex: =3
+
+        Button14 As button:
+            OnSelect: |-
+                =UpdateContext({ShowPopup:false});
+            Text: ="Cancel"
+            X: =768
+            Y: =447
+            ZIndex: =4
+
+        Form8 As form:
+            DataSource: =Factor_2
+            DefaultMode: =FormMode.New
+            Height: =294
+            NumberOfColumns: =1
+            X: =60
+            Y: =108
+            ZIndex: =5
+
+            "'Factor Code_DataCard3' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Title"
+                Default: =ThisItem.'Factor Code'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Factor_2],DataSourceInfo.DisplayName,"Title")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@Factor_2], DataSourceInfo.MaxLength, "Title")
+                Required: =true
+                Update: =DataCardValue43.Text
+                Width: =800
+                X: =0
+                Y: =0
+                ZIndex: =6
+
+                DataCardKey43 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue43 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey43.Y + DataCardKey43.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage35 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue43.Y + DataCardValue43.Height
+                    ZIndex: =3
+
+                StarVisible35 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey43.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey43.Y
+                    ZIndex: =4
+
+            "'Factor Name_DataCard3' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="FactorName"
+                Default: =ThisItem.'Factor Name'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Factor_2],DataSourceInfo.DisplayName,"FactorName")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@Factor_2], DataSourceInfo.MaxLength, "FactorName")
+                Required: =true
+                Update: =DataCardValue44.Text
+                Width: =800
+                X: =0
+                Y: =1
+                ZIndex: =6
+
+                DataCardKey44 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue44 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey44.Y + DataCardKey44.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage36 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue44.Y + DataCardValue44.Height
+                    ZIndex: =3
+
+                StarVisible36 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey44.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey44.Y
+                    ZIndex: =4
+

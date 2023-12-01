@@ -1,0 +1,293 @@
+"'Login Page' As screen":
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(246, 88, 16, 1)
+        Fill: =RGBA(232, 244, 217, 1)
+        Height: =134
+        HoverFill: |
+            =RGBA(232, 244, 217, 1)
+        Width: =1366
+        ZIndex: =1
+
+    Image1 As image:
+        Image: ='government-of-dubai-logo-2741490B3F-seeklogo.com'
+        Width: =272
+        X: =53
+        Y: =17
+        ZIndex: =2
+
+    Image2 As image:
+        Image: ='the-emirates-new-logo'
+        Width: =262
+        X: =538
+        Y: =17
+        ZIndex: =3
+
+    Image3 As image:
+        Image: =Logo_of_DEWA
+        Width: =332
+        X: =998
+        Y: =17
+        ZIndex: =4
+
+    Rectangle2 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =634
+        Width: =826
+        Y: =134
+        ZIndex: =5
+
+    Label1 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =78
+        Size: =20
+        Text: ="Welcome to"
+        Width: =198
+        X: =36
+        Y: =165
+        ZIndex: =6
+
+    Label2 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =118
+        LineHeight: =1.5
+        Size: =25
+        Text: |-
+            ="Happiness Achievement 
+            Commitment Tool"
+        Width: =558
+        X: =36
+        Y: =243
+        ZIndex: =7
+
+    Label3 As label:
+        Height: =354
+        LineHeight: =1.9
+        Size: =15
+        Text: ="Stakeholder Perception reports are structured to provide recommendations on areas that highly and positively impact stakeholder relationship with DEWA. These reports work as an input for developing internal and external initiatives to assure positive trend of stakeholder experience for happier future relations. Therefore managing the improvement initiatives is considered very critical to assure future happiness impact on the overall relation between DEWA and its stakeholders. For this purpose, Q&SHM developed a new tool – Happiness Achievement Commitment Tool (HACT)."
+        Width: =764
+        X: =36
+        Y: =361
+        ZIndex: =8
+
+    Rectangle3 As rectangle:
+        Fill: =RGBA(23, 145, 131, 1)
+        Height: =634
+        Width: =540
+        X: =826
+        Y: =134
+        ZIndex: =9
+
+    Form2 As form:
+        DataSource: ='Login Details_1'
+        DefaultMode: =FormMode.New
+        Height: =275
+        NumberOfColumns: =1
+        Width: =457
+        X: =869
+        Y: =271
+        ZIndex: =10
+
+        Username_DataCard3 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Username
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Login Details_1'],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Login Details_1'], DataSourceInfo.MaxLength, "Title")
+            Required: =true
+            Update: =DataCardValue12.Text
+            Width: =457
+            X: =0
+            Y: =0
+            ZIndex: =11
+
+            DataCardKey12 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                ZIndex: =1
+
+            DataCardValue12 As text:
+                BorderColor: =Color.White
+                BorderThickness: =0
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =50
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: |
+                    =DataCardKey12.Y + DataCardKey12.Height + 15
+                ZIndex: =2
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue12.Y + DataCardValue12.Height
+                ZIndex: =3
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Height: =DataCardKey12.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey12.Y
+                ZIndex: =4
+
+        Password_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Password"
+            Default: =ThisItem.Password
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Login Details_1'],DataSourceInfo.DisplayName,"Password")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =83
+            MaxLength: =DataSourceInfo([@'Login Details_1'], DataSourceInfo.MaxLength, "Password")
+            Required: =true
+            Update: =DataCardValue13.Text
+            Width: =457
+            X: =0
+            Y: =120
+            ZIndex: =11
+
+            DataCardKey13 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                ZIndex: =1
+
+            DataCardValue13 As text:
+                BorderColor: =Color.White
+                BorderThickness: =0
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =50
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                MaxLength: =Parent.MaxLength
+                Mode: =TextMode.Password
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 15
+                ZIndex: =2
+
+            ErrorMessage5 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue13.Y + DataCardValue13.Height
+                ZIndex: =3
+
+            StarVisible5 As label:
+                Align: =Align.Center
+                Height: =DataCardKey13.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey13.Y
+                ZIndex: =4
+
+    Button3 As button:
+        Fill: =RGBA(23, 145, 131, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =66
+        HoverFill: =Color.HotPink
+        OnSelect: |+
+            =If(
+                DataCardValue13.Text="admin",
+                Navigate(Dashboard,
+                ScreenTransition.None)
+               
+            );
+            
+            If(
+                DataCardValue13.Text="champion",
+                Navigate('Dashboard(C)',
+                ScreenTransition.None)
+            );
+            
+            If(
+                DataCardValue13.Text="approver1",
+                Navigate('Dashboard(Approver1)',
+                ScreenTransition.None)
+            );
+            
+            If(
+                DataCardValue13.Text="approver2",
+                Navigate('Dashboard(Approver2)',
+                ScreenTransition.None)
+                
+            );
+            
+            If(
+                DataCardValue13.Text="approver3",
+                Navigate('Dashboard 3',
+                ScreenTransition.None)
+            );
+            
+            If(
+                DataCardValue13.Text="approver4",
+                Navigate('Dashboard 4',
+                ScreenTransition.None)
+            );
+            
+        Size: =20
+        Text: ="Login"
+        Width: =196
+        X: =999
+        Y: =602
+        ZIndex: =11
+

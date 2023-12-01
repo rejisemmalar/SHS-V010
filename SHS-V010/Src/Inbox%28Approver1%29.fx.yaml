@@ -1,0 +1,13 @@
+"'Inbox(Approver1)' As screen":
+
+    Approver1_2 As Approver1:
+        CurrentScreen: ="Inbox"
+        Height: =768
+
+    "'Inbox 1(comp)_1' As 'Inbox 1(comp)'":
+        Height: =635
+        Width: =532
+        X: =411
+        Y: =132
+        ZIndex: =2
+

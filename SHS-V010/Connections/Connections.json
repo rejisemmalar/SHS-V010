@@ -1,0 +1,99 @@
+{
+  "d5d288d0-8556-4a38-a03d-f5517ce3059c": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://4lx8z8.sharepoint.com/sites/SHS-V001": {
+        "dataSources": {
+          "Login Details_1": {
+            "tableName": "774fed77-2c07-4f89-a681-ef74c183c89d"
+          },
+          "Segment_1": {
+            "tableName": "44419051-52d3-447c-bec5-8cc10da55c78"
+          }
+        }
+      },
+      "https://y00q1.sharepoint.com/sites/SHS-V07": {
+        "dataSources": {
+          "Division_1": {
+            "tableName": "31c2a3e9-f68d-48d7-8542-64b5ae49d126"
+          },
+          "Factor": {
+            "tableName": "ccf22452-b069-45bd-b208-f2aa065409b8"
+          },
+          "Factor_1": {
+            "tableName": "ccf22452-b069-45bd-b208-f2aa065409b8"
+          },
+          "Factor_2": {
+            "tableName": "ccf22452-b069-45bd-b208-f2aa065409b8"
+          },
+          "Login Details": {
+            "tableName": "329e5a5f-1293-4368-a3f2-67d91be2f1bb"
+          },
+          "Options_1": {
+            "tableName": "ff92d1af-76aa-4b93-b5d2-32c44708555d"
+          },
+          "Profile information(admin)": {
+            "tableName": "e2bd1582-5049-4706-98f6-9bf8ca6d1790"
+          },
+          "Questions_1": {
+            "tableName": "0e1ff4d4-cf16-4a4d-a9c2-72e1895e767e"
+          },
+          "Segment Member_1": {
+            "tableName": "169efd9a-a110-4b87-ab7c-1f2ae93a572f"
+          },
+          "Segment Member_5": {
+            "tableName": "169efd9a-a110-4b87-ab7c-1f2ae93a572f"
+          },
+          "Segment_3": {
+            "tableName": "cb41dfdc-4f53-481c-a28c-447c0a602d55"
+          },
+          "Segment_4": {
+            "tableName": "cb41dfdc-4f53-481c-a28c-447c0a602d55"
+          },
+          "Segment_5": {
+            "tableName": "cb41dfdc-4f53-481c-a28c-447c0a602d55"
+          },
+          "SHS-Users_1": {
+            "tableName": "991d0732-9a71-4950-acc8-5bd703252f59"
+          },
+          "Subfactors_1": {
+            "tableName": "7da5b8f9-b3f5-4d8c-a9cb-1bfcd3707ba1"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Profile information(admin)",
+      "Login Details",
+      "Login Details_1",
+      "Segment_1",
+      "Segment_3",
+      "Segment_4",
+      "Segment_5",
+      "Division_1",
+      "SHS-Users_1",
+      "Segment Member_5",
+      "Segment Member_1",
+      "Factor",
+      "Factor_1",
+      "Factor_2",
+      "Subfactors_1",
+      "Questions_1",
+      "Options_1"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d5d288d0-8556-4a38-a03d-f5517ce3059c"
+  }
+}

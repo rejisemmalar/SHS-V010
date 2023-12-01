@@ -1,0 +1,13 @@
+"'Inbox(C)' As screen":
+
+    "'Navigation(C)_2' As 'Navigation(C)'":
+        CurrentScreen: ="Inbox"
+        Height: =768
+
+    "'Inbox(Comp)_1' As 'Inbox(Comp)'":
+        Height: =634
+        Width: =560
+        X: =402
+        Y: =134
+        ZIndex: =2
+

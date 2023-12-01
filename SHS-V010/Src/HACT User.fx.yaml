@@ -208,7 +208,7 @@
         Y: =343
         ZIndex: =15
 
-    Label39_3 As label:
+    "'User Role' As label":
         Text: ="User Role"
         X: =838
         Y: =343

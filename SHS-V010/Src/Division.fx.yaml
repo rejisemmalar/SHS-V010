@@ -1488,6 +1488,8 @@ Division As screen:
                     ZIndex: =4
 
         Button22 As button:
+            OnSelect: |-
+                =SubmitForm(Form10);UpdateContext({showeditdivpopup:false})
             Text: ="Save"
             X: =46
             Y: =458

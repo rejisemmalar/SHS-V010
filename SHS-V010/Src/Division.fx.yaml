@@ -880,9 +880,9 @@ Division As screen:
         ZIndex: =20
 
         Label45 As label:
-            Text: ="Text"
-            X: =33
-            Y: =24
+            Text: ="Confirmation"
+            X: =156
+            Y: =27
             ZIndex: =1
 
     showeditpopupdiv As group:

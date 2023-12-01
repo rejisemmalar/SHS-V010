@@ -910,6 +910,8 @@ Division As screen:
             ZIndex: =3
 
         Button26 As button:
+            OnSelect: |-
+                =Remove(Division_1,Gallery8.Selected);UpdateContext({varshowdeletepopup:false})
             Text: ="Yes"
             X: =63
             Y: =246

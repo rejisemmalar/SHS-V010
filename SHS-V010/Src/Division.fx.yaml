@@ -146,6 +146,50 @@ Division As screen:
         Y: =307
         ZIndex: =14
 
+    Gallery8 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =383
+        Items: =Division_1
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =118
+        Width: =1099
+        X: =267
+        Y: =384
+        ZIndex: =15
+
+        Button24 As button:
+            OnSelect: |-
+                =UpdateContext({showeditpopup:true})
+            Text: ="Edit"
+            Width: =96
+            X: =662
+            Y: =15
+            ZIndex: =1
+
+        Label43 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Division Code'
+            X: =39
+            Y: =15
+            ZIndex: =2
+
+        Label43_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Division Name'
+            X: =360
+            Y: =15
+            ZIndex: =3
+
+        Button24_1 As button:
+            OnSelect: |-
+                =UpdateContext({varshowdeletepopup:true})
+            Text: ="Delete"
+            Width: =96
+            X: =804
+            Y: =15
+            ZIndex: =4
+
     Container8 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Bold
         Fill: =RGBA(255, 255, 255, 1)
@@ -154,7 +198,7 @@ Division As screen:
         Width: =1258
         X: =60
         Y: =30
-        ZIndex: =15
+        ZIndex: =16
 
         Form1 As form:
             DataSource: =Division_1
@@ -821,49 +865,6 @@ Division As screen:
             Y: =27
             ZIndex: =4
 
-    Gallery8 As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Height: =383
-        Items: =Division_1
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =118
-        Width: =1099
-        X: =267
-        Y: =384
-        ZIndex: =18
-
-        Button24 As button:
-            OnSelect: |-
-                =UpdateContext({showeditpopup:true})
-            Text: ="Edit"
-            Width: =96
-            X: =662
-            Y: =15
-            ZIndex: =1
-
-        Label43 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.'Division Code'
-            X: =39
-            Y: =15
-            ZIndex: =2
-
-        Label43_1 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.'Division Name'
-            X: =360
-            Y: =15
-            ZIndex: =3
-
-        Button24_1 As button:
-            OnSelect: =Select(Parent)
-            Text: ="Delete"
-            Width: =96
-            X: =804
-            Y: =15
-            ZIndex: =4
-
     showeditpopupdiv As group:
         Height: =5
         Width: =5
@@ -876,7 +877,7 @@ Division As screen:
             Height: =768
             Visible: =showeditpopup
             Width: =1366
-            ZIndex: =16
+            ZIndex: =17
 
         Container28 As groupContainer.manualLayoutContainer:
             Fill: =RGBA(238, 204, 204, 1)
@@ -885,7 +886,7 @@ Division As screen:
             Width: =1005
             X: =216
             Y: =195
-            ZIndex: =17
+            ZIndex: =18
 
             Label44 As label:
                 Text: ="Edit Division"

@@ -865,6 +865,12 @@ Division As screen:
             Y: =27
             ZIndex: =4
 
+    Container29 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(128, 128, 128, 0.34)
+        Height: =768
+        Width: =1366
+        ZIndex: =19
+
     showeditpopupdiv As group:
         Height: =5
         Width: =5

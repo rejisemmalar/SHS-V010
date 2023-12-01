@@ -1487,8 +1487,14 @@ Division As screen:
                     ZIndex: =4
 
         Button22 As button:
-            Text: ="Button"
+            Text: ="Save"
             X: =46
             Y: =458
             ZIndex: =3
+
+        Button22_1 As button:
+            Text: ="Save"
+            X: =496
+            Y: =458
+            ZIndex: =4
 

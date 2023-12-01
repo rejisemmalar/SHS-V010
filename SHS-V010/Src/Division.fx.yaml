@@ -849,9 +849,17 @@ Division As screen:
 
         Button24 As button:
             OnSelect: =Select(Parent)
-            Text: ="Button"
+            Text: ="Edit"
             Width: =96
             X: =662
             Y: =15
             ZIndex: =3
+
+        Button24_1 As button:
+            OnSelect: =Select(Parent)
+            Text: ="Edit"
+            Width: =96
+            X: =804
+            Y: =15
+            ZIndex: =4
 

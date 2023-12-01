@@ -910,10 +910,16 @@ Division As screen:
             ZIndex: =3
 
         Button26 As button:
-            Text: ="Button"
+            Text: ="Yes"
             X: =63
             Y: =246
             ZIndex: =4
+
+        Button26_1 As button:
+            Text: ="Yes"
+            X: =372
+            Y: =246
+            ZIndex: =5
 
     showeditpopupdiv As group:
         Height: =5

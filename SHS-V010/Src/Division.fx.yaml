@@ -846,3 +846,11 @@ Division As screen:
             Y: =15
             ZIndex: =2
 
+        Button21 As button:
+            OnSelect: =Select(Parent)
+            Text: ="Button"
+            Width: =116
+            X: =666
+            Y: =15
+            ZIndex: =3
+

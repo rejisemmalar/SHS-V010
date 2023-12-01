@@ -900,7 +900,7 @@ Division As screen:
 
         Label46 As label:
             Height: =62
-            Text: ="Text"
+            Text: ="Are you syre you want to delete?"
             Width: =610
             X: =114
             Y: =129

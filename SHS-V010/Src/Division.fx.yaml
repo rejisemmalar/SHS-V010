@@ -839,3 +839,10 @@ Division As screen:
             Y: =15
             ZIndex: =1
 
+        Label40_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Division Name'
+            X: =334
+            Y: =15
+            ZIndex: =2
+

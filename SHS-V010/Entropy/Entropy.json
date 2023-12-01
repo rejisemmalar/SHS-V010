@@ -3,6 +3,7 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "Action": 294,
+    "Action(SHS_user)": 799,
     "Action_Column1": 707,
     "Action_Column3": 678,
     "Action_Column5": 332,
@@ -616,7 +617,6 @@
     "Label36": 606,
     "Label37": 571,
     "Label38": 179,
-    "Label39_4": 799,
     "Label4": 24,
     "Label4_1": 107,
     "Label4_2": 121,
@@ -802,7 +802,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/01/2023 09:06:21",
+  "HeaderLastSavedDateTimeUTC": "12/01/2023 09:06:44",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "d5d288d0-8556-4a38-a03d-f5517ce3059c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/6b09e5d9e40c401a9964269a06a6ff10\""
@@ -925,6 +925,7 @@
   },
   "OverridablePropertiesEntry": {
     "Action": {},
+    "Action(SHS_user)": {},
     "Action_Column1": {},
     "Action_Column3": {},
     "Action_Column5": {},
@@ -1538,7 +1539,6 @@
     "Label36": {},
     "Label37": {},
     "Label38": {},
-    "Label39_4": {},
     "Label4": {},
     "Label4_1": {},
     "Label4_2": {},
@@ -1726,6 +1726,7 @@
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "Action": 175,
+    "Action(SHS_user)": 397,
     "Action_Column1": 210,
     "Action_Column3": 243,
     "Action_Column5": 271,
@@ -2339,7 +2340,6 @@
     "Label36": 311,
     "Label37": 346,
     "Label38": 60,
-    "Label39_4": 397,
     "Label4": 632,
     "Label4_1": 701,
     "Label4_2": 714,

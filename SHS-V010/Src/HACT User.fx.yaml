@@ -214,7 +214,7 @@
         Y: =343
         ZIndex: =16
 
-    Label39_4 As label:
+    "'Action(SHS_user)' As label":
         Text: ="Action"
         X: =1067
         Y: =343

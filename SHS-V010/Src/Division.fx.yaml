@@ -903,11 +903,17 @@ Division As screen:
             FontWeight: =FontWeight.Bold
             Height: =62
             Size: =20
-            Text: ="Are you syre you want to delete?"
+            Text: ="Are you sure you want to delete?"
             Width: =610
             X: =114
             Y: =129
             ZIndex: =3
+
+        Button26 As button:
+            Text: ="Button"
+            X: =63
+            Y: =246
+            ZIndex: =4
 
     showeditpopupdiv As group:
         Height: =5

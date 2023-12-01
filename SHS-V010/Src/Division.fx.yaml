@@ -1564,7 +1564,7 @@ Division As screen:
 
             Button26 As button:
                 OnSelect: |-
-                    =Remove(Division_1,Gallery8.Selected);UpdateContext({varshowdeletepopup:false})
+                    =Remove(Division_1,Gallery8.Selected);UpdateContext({varshowdeletepopup:false});Notify("The division has been deleted successfully",NotificationType.Success)
                 Text: ="Yes"
                 X: =63
                 Y: =246

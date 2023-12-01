@@ -827,7 +827,7 @@ Division As screen:
         Items: =Division_1
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =136
+        TemplateSize: =118
         Width: =1099
         X: =267
         Y: =384
@@ -857,7 +857,7 @@ Division As screen:
 
         Button24_1 As button:
             OnSelect: =Select(Parent)
-            Text: ="Edit"
+            Text: ="Delete"
             Width: =96
             X: =804
             Y: =15
